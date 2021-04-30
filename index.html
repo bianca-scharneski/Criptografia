@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagem Oculta</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2? family = Fonte + Código + Pro: wght @ 700 & display = swap "
+            rel=" stylesheet ">
+        <title>Mensagem Oculta</title>
+    </head>
+
+<body>
+    <link rel="stylesheet" href="C:\Users\bianc\Documents\RESILIA\criptografia\CSS\decodifica.css">
+    <script src="C:\Users\bianc\Documents\RESILIA\criptografia\JS\criptografia.js"></script>
+    <h1>Comece a Criptografar! </h1>
+    <form>
+        <div class="caixaMensagem">
+            <label class="botaoEscolha">Escolha a Criptografia:</label>
+            <select id="selecaoCriptografia" aria-label="Criptografia" onchange="alteracaoSelect(this)">
+                <option selected>Selecione</option>
+                <option  value="1" >Base64</option>
+                <option value="2"  >Cifra de Cesar</option>
+            </select>
+        </div>
+
+        <div class="caixaMensagem">
+            <label class="caixaMensagem">Digite sua mensagem a ser criptografada</label>
+            <br>
+            <textarea id="caixaDeTexto" rows="3" cols="50"></textarea>
+            <label style='display: none;'  name="insiraChave" id = "insiraChave">insira a chave:</label>
+            <input style='display: none;' type="number" id="quantity" name="quantity" min="1" max="26">
+        </div>
+            <input  type="radio" onclick="alterarRB(1)" id="Criptografar" name="rbCriptografa" checked>
+            <label>Criptografar</label>
+            <input type="radio" onclick="alterarRB(2)" id="Descriptografar" name="rbCriptografa">
+            <label>Descriptografar</label>
+        </div>
+        </div>
+        <br>
+
+            <button id="botaoCriptografa" type="button" onclick="criptografia()">Criptografar</button>
+
+        <div class="caixaMensagem">
+            <label class="caixaMensagem">Resultado</label>
+            <br>
+            <textarea id ="resultadoCaixa" rows="3" cols="50"></textarea>
+        </div>
+    </form>
+</body>
+
+</html>
