@@ -3,52 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mensagem Oculta</title>
+    <title>O céu neste dia</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2? family = Fonte + Código + Pro: wght @ 700 & display = swap "
-            rel=" stylesheet ">
-        <title>Mensagem Oculta</title>
-    </head>
+</head>
 
 <body>
-    <link rel="stylesheet" href="/CSS/decodifica.css">
-    <script src="/JS/criptografia.js"></script>
-    <h1>Comece a Criptografar! </h1>
-    <form>
-        <div class="caixaMensagem">
-            <label class="botaoEscolha">Escolha a Criptografia:</label>
-            <select id="selecaoCriptografia" aria-label="Criptografia" onchange="alteracaoSelect(this)">
-                <option selected>Selecione</option>
-                <option  value="1" >Base64</option>
-                <option value="2"  >Cifra de Cesar</option>
-            </select>
-        </div>
+    <link rel="stylesheet" href="/CSS/apodstyle.css"> 
+    <h1 id="tituloCeu">O céu neste dia</h1>
 
-        <div class="caixaMensagem">
-            <label class="caixaMensagem">Digite sua mensagem a ser criptografada</label>
-            <br>
-            <textarea id="caixaDeTexto" rows="3" cols="50"></textarea>
-            <label style='display: none;'  name="insiraChave" id = "insiraChave">insira a chave:</label>
-            <input style='display: none;' type="number" id="quantity" name="quantity" min="1" max="26">
-        </div>
-            <input  type="radio" onclick="alterarRB(1)" id="Criptografar" name="rbCriptografa" checked>
-            <label>Criptografar</label>
-            <input type="radio" onclick="alterarRB(2)" id="Descriptografar" name="rbCriptografa">
-            <label>Descriptografar</label>
-        </div>
-        </div>
-        <br>
+    <div class="corpo">
+        <h1 id="escolhaData">escolha a data</h1>
+        <input id="date" type="date"></input>
+        <button id="botao" onclick="fotoDoDia()">Enviar</button>
 
-            <button id="botaoCriptografa" type="button" onclick="criptografia()">Criptografar</button>
+    </div>
+    
+        <img hidden id="fotoDoDia" src=""  alt="foto do dia do espaço" >
 
-        <div class="caixaMensagem">
-            <label class="caixaMensagem">Resultado</label>
-            <br>
-            <textarea id ="resultadoCaixa" rows="3" cols="50"></textarea>
-        </div>
-    </form>
+        <iframe  hidden id="videoDoDia" src="" >
+        </iframe>
+
+    <div id="titulo">
+        <h2 hidden> Título </h2>
+    </div>
+    <div id="descrição">
+        <h3 hidden> Descrição </h3>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/JS/apod.js"></script>
 </body>
 
 </html>

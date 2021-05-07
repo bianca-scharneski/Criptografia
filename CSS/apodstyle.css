@@ -1,0 +1,62 @@
+body {
+    background-color:#222222;
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+}
+
+#videoDoDia {
+    display:  ;
+    width: 100% auto ;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#fotoDoDia {
+    display: ;
+    width: 100% auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#tituloCeu{
+    font-size: 50pt;
+}
+#escolhaData{
+    font-size: 30pt;
+}
+#date{
+    width: 15%;
+    font-size: 12pt;
+    border-radius: 7px;
+    font-family: 'Zen Dots', cursive;
+    display: flex;
+    margin: 0 auto;
+    height: 30px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    row-gap: 10;
+}
+#botao{
+    width: 8%;
+    height: 30px;
+    font-size: 16pt;
+    border-radius: 7px;
+    font-family: 'Zen Dots', cursive;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 10px;
+
+}
+#descrição{
+    font-family: sans-serif;
+    display: inline-block;
+    color: #dedede;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+#titulo{
+    color: #dedede;
+}
